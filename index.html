@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advanced HTML</title>
+    </head>
+    <body>
+        <h2>An ordered list</h2>
+        <!-- ordered list -->
+         <ol type="i">
+            <li>HTML</li>
+            <li>HTML</li>
+            <li>HTML</li>
+            <li>HTML</li>
+         </ol>
+
+         <!-- external image -->
+          <h2>An external image from pexels.com</h2>
+          <img src="https://images.pexels.com/photos/31116121/pexels-photo-31116121/free-photo-of-top-view-of-delicious-sugar-cookies-on-white-background.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load"
+           alt="cookie image" width="300" height="300">
+
+        <h2>A table</h2>
+        <!-- a table  -->
+        <table >
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fatimah</td>
+                    <td>Rufus laniyan estate</td>
+                    <td>09124298141</td>
+                    <td>oladipo@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Rasheedah</td>
+                    <td>Rufus lanre estate</td>
+                    <td>08028764453</td>
+                    <td>oladipupo@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Bola</td>
+                    <td>one love estate</td>
+                    <td>09152721282</td>
+                    <td>balogun@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Haleemah</td>
+                    <td>Rufus street</td>
+                    <td>08023121245</td>
+                    <td>oladipo24@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Faridah</td>
+                    <td>Rufus laniyan estate</td>
+                    <td>09130607664</td>
+                    <td>marcus@gmail.com</td>
+                </tr>
+            </tbody>
+            
+        </table>
+        <h2>A registration form</h2>
+        <form  method="">
+            <!-- name field  -->
+            <p><label for="name">Name: </label> <input type="text" name="name" id="name" placeholder="name" />
+            </p>
+
+            <!-- email field  -->
+            <p><label for="email">Email: </label> <input name="email" type="email" placeholder="Email"/></p>
+
+            <!-- password field  -->
+            <p><label for="password">Password: </label> <input type="password" name="password" id="password"
+                placeholder="password" />
+            </p>
+            
+            <!-- date field  -->
+            <p><label for="dob">DOB: </label> <input type="date" name="dob" id="dob" required /></p>
+
+            <!-- phone number field  -->
+            <p><label for="phone">Tel: </label> <input type="tel" name="phone" placeholder="234-128-4223-555"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}-[0-9]{3}" />
+            </p>
+
+            <!-- radio button for gender field  -->
+            <p><label for="gender">Gender: </label> Male <input type="radio" name="gender" required /> Female <input type="radio"
+                name="gender" required />
+            </p>
+
+            <!-- checkbox field  -->
+            <p><label for="skills">Select skills: </label> 
+                <input type="checkbox" name="html" id="html"/>HTML 
+                <input type="checkbox" name="Javascript" id="javascript"/>Javascript
+                <input type="checkbox" name="css" id="css"> CSS
+            </p>
+
+            <!-- dropdown  -->
+            <p><label for="">Qualification: </label>
+                <select name="qual" id="qual" required >
+                    <option value="" selected></option>
+                    <option value="ssce">SSCE</option>
+                    <option value="ssce">masters</option>
+                    <option value="ssce">primary</option>
+                    <option value="ssce">phd</option>
+                    <option value="ssce">secondary</option>
+    
+                </select>
+            </p>
+            <input type="submit" value="submit">
+    
+        </form>
+    </body>
+</html>
